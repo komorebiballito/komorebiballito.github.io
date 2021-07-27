@@ -513,11 +513,11 @@ li {
 	cursor: pointer;
 	border-radius: 20px;
 	background-color: #F1F1F1;
-  	color: #9CBF93;
-  	border: 1px solid #9CBF93; 
-  	width: 185px;
-  	height: 45px;
-  	font-size: 14px;
+  color: #9CBF93;
+ 	border: 1px solid #9CBF93; 
+  width: 185px;
+  height: 45px;
+  font-size: 14px;
 } 
 
 .clickbutton:hover {
@@ -541,13 +541,16 @@ li {
 		grid-template-columns: 25% 25% 25% 25%;
 	}
 
-/*button isnt staying at the bottom of the page*/
-	.clickbutton {
-		display: grid;
+	.columns {
+		position:relative;
 	}
 
-	.push {
-		padding-left: 23.5%;
-
+	.clickbutton {
+		display: grid;
+		align-items: center;
+		position: absolute;
+		bottom: 0;
+		left: 23%;
+		margin-bottom: 15px;
 	}
 }
